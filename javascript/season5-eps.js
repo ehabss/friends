@@ -502,3 +502,12 @@ span.onclick = function () {
     "ar"
   ).src = `assets/s05 ar/s05 (${episode.innerHTML}).vtt`;
 };
+// ---------------------random---------------------
+
+let shuffle = document.querySelector(".shuffle");
+shuffle.onclick = function () {
+  let rnd = Math.floor(Math.random() * 23 + 1);
+  console.log(rnd);
+  span = document.getElementById(`ep${rnd}`);
+  span.onclick();
+};

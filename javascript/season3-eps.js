@@ -529,3 +529,12 @@ span.onclick = function () {
     "ar"
   ).src = `assets/s03 ar/s03 (${episode.innerHTML}).vtt`;
 };
+// ---------------------random---------------------
+
+let shuffle = document.querySelector(".shuffle");
+shuffle.onclick = function () {
+  let rnd = Math.floor(Math.random() * 25 + 1);
+  console.log(rnd);
+  span = document.getElementById(`ep${rnd}`);
+  span.onclick();
+};

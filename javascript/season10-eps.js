@@ -355,3 +355,12 @@ span.onclick = function () {
     "ar"
   ).src = `assets/s10 ar/s10 (${episode.innerHTML}).vtt`;
 };
+// ---------------------random---------------------
+
+let shuffle = document.querySelector(".shuffle");
+shuffle.onclick = function () {
+  let rnd = Math.floor(Math.random() * 17 + 1);
+  console.log(rnd);
+  span = document.getElementById(`ep${rnd}`);
+  span.onclick();
+};

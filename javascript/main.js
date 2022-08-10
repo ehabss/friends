@@ -54,3 +54,38 @@ function updateVisitCount() {
 // exit.onclick = function () {
 //   contact.className = "remove";
 // };
+//download button =======================================================================
+let download = document.querySelector(".save");
+download.innerHTML = `<i class="fa-solid fa-download"></i>
+<span>Download</span>`;
+let downloadList = document.createElement("div");
+downloadList.classList.add("download-list");
+downloadList.innerHTML = `<span onclick="downloadEp()" class="download-episopde">Download Episode</span>
+<span onclick="downloadAr()" class="download-ar">Ar Subtitle</span>
+<span onclick="downloadEn()" class="download-en">En Subtitle</span>
+<span onclick="downloadClose()" class="close"><i class="fa-solid fa-xmark"></i></span>`;
+download.onclick = function () {
+  document.querySelector(".player .links").appendChild(downloadList);
+  downloadList.style.display = "flex";
+};
+let enCap = document.querySelector("[id='en']");
+let arCap = document.querySelector("[id='ar']");
+
+function downloadEp() {
+  if (video.src === "") {
+    alert("اختار الحلقة الاول");
+  } else {
+    window.location.href = video.src;
+  }
+}
+function downloadAr() {
+  window.location.href =
+    "https://www.4shared.com/web/directDownload/8NlFumzhiq/2vEBSlaP.2ae05abb11eba9f0cb554100b106462a";
+}
+function downloadEn() {
+  window.location.href =
+    "https://www.4shared.com/web/directDownload/s0xYAd-4ea/2vEBSlaP.e45a9073903ed504c40c918bce123a8e";
+}
+function downloadClose() {
+  downloadList.style.display = "none";
+}

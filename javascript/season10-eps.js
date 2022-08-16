@@ -342,7 +342,7 @@ span.onclick = function () {
   });
   {
     video.src =
-      "https://archive.org/download/friends.s10e17e18.720p.bluray.sujaidr/friends.s10e17.720p.bluray.sujaidr.mkv";
+      "https://www.4shared.com/web/directDownload/TcOv1LCHea/2vEBSlaP.fef650926fbcd0d8f710c0e2ee09dff0";
     video.play();
   }
   {

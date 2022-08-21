@@ -380,7 +380,7 @@ span.onclick = function () {
   });
   {
     video.src =
-      "https://archive.org/download/friends.s01e16.720p.bluray.x264-sujaidr/friends.s01e.720p19.bluray.x264-sujaidr.mkv";
+      "https://www.4shared.com/web/directDownload/1q7Dupa5iq/2vEBSlaP.3a9664db69cbc609108e46085fe85053";
     video.play();
   }
   {

@@ -51,9 +51,9 @@ function updateVisitCount() {
 // function method1() {
 //   contact.className = "remove";
 // }
-// exit.onclick = function () {
-//   contact.className = "remove";
-// };
+exit.onclick = function () {
+  contact.className = "remove";
+};
 //download button =======================================================================
 let download = document.querySelector(".save");
 download.innerHTML = `<i class="fa-solid fa-download"></i>
